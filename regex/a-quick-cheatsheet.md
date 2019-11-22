@@ -38,7 +38,7 @@ Cùng bắt đầu bằng cách xem xét một số ví dụ kèm theo giải th
 
 | Ví dụ | Giải thích |
 | --- | --- |
-| `a(b|c)` | khớp với bất kì chuỗi nào có `a` mà theo sau bởi `b` hoặc `c` |
+| `a(b\|c)` | khớp với bất kì chuỗi nào có `a` mà theo sau bởi `b` hoặc `c` |
 | `a[bc]` | tương tự trên |
 
 ### Các lớp ký tự — `\d`, `\w`, `\s` và `.`
@@ -46,10 +46,10 @@ Cùng bắt đầu bằng cách xem xét một số ví dụ kèm theo giải th
 | Ví dụ | Giải thích |
 | --- | --- |
 | `\d` | khớp với một ký tự là một chữ số |
-| `\w` | khớp với một ký tự từ (ký tự chữ và số cộng với dấu gạch dưới _) |
+| `\w` | khớp với một ký tự từ (ký tự chữ và số cộng với dấu gạch dưới \_) |
 | `\s` | khớp với một ký tự khoảng trắng (bao gồm các tab và ký tự ngắt dòng) |
 | `\D` | khớp với một ký tự không phải là một chữ số |
-| `\W` | khớp với một ký tự không phải là từ (ký tự chữ và số cộng với dấu gạch dưới _) |
+| `\W` | khớp với một ký tự không phải là từ (ký tự chữ và số cộng với dấu gạch dưới \_) |
 | `\S` | khớp với một ký tự không phải là khoảng trắng (các tab và ký tự ngắt dòng) |
 | `.` | khớp với một ký tự bất kì |
 
@@ -153,7 +153,8 @@ Và bạn cũng có thể sử dụng toán tử phủ định `!` như sau:
 
 ## Tổng kết
 
-Như bạn thấy ở trên, các lĩnh vực ứng dụng của regex có thể rất là nhiều và mình cũng chắc chắn rằng bạn đã nhận ra ít nhất một trong số các tác vụ dưới đây trong số những tác vụ được thấy trong quãng đường lập trình của bạn:
+Như bạn thấy ở trên, các lĩnh vực ứng dụng của regex có thể rất là nhiều và mình cũng chắc chắn rằng bạn sẽ nhận ra ít nhất một trong số các tác vụ dưới đây trong số những tác vụ được thấy trong quãng đường lập trình của bạn:
+
 - xác thực dữ liệu (ví dụ kiểm tra xem chuỗi thời gian có được định dạng tốt không)
 - quét dữ liệu (đặc biệt là quét 1 website, tìm tất cả các trang có chứa một bộ từ nhất định theo thứ tự cụ thể)
 - sắp xếp dữ liệu (chuyển đổi dữ liệu từ định dạng thô thành định dạng khác)
