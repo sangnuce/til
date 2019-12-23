@@ -151,7 +151,7 @@ Việc gọi `run` trên một thể hiện của `Service` trước tiên sẽ 
 
 ## Extend
 Sử dụng `extend` trên một lớp sẽ thực sự nhúng các phương thức của module làm class methods. Nếu chúng ta sử dụng `extend` thay vì `include` trong ví dụ của mình, module `Logging` sẽ không được chèn vào chuỗi tổ tiên của class `Service`. Vì vậy, chúng ta không thể gọi phương thức `log` trên bất kỳ thể hiện nào của `Service`.
-Thay vào đó, Ruby sẽ chèn module vào chuỗi tổ tiên của `singleton_class` của class `Service`. Singleton class (được đặt tên là `#Service`) thực sự là nơi các class methods của class `Service` được định nghĩa. Các phương thức của module `Logging` sẽ có sẵn như là các class methods của class `Service`.
+Thay vào đó, Ruby sẽ chèn module vào chuỗi tổ tiên của `singleton_class` của class `Service`. Cái gọi là `singleton class` này (được đặt tên là `#Service`) chính là nơi mà các class methods của class `Service` được định nghĩa. Các phương thức của module `Logging` sẽ có sẵn như là các class methods của class `Service`.
 
 ![](https://miro.medium.com/max/2000/1*tINNfzNK99H6L5LZauQktA.jpeg)
 
@@ -180,4 +180,7 @@ module Logging
 end
 ```
 
-Bây giờ, khi chúng ta include module vào class `Service`, các phương thức của module sẽ được nhập dưới dạng các instance methods của class. Phương thức `included` cũng được gọi, với class đang include làm đối số. Sau đó, chúng ta có thể gọi `extend` trên nó để nhập các phương thức của submodule `ClassMethods` làm class methods. Như thế đấy...
+Bây giờ, khi chúng ta include module vào class `Service`, các phương thức của module sẽ được nhập dưới dạng các instance methods của class. Phương thức `included` cũng được gọi, với class đang include làm đối số. Sau đó, chúng ta có thể gọi `extend` trên nó để nhập các phương thức của submodule `ClassMethods` làm class methods. Tất cả chỉ có vậy...
+
+## Tham khảo
+https://medium.com/@leo_hetsch/ruby-modules-include-vs-prepend-vs-extend-f09837a5b073
