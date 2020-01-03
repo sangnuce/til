@@ -101,7 +101,7 @@ Một lưu ý nhỏ rằng bên trong các biểu thức ngoặc vuông này, t�
 
 Các bộ định lượng (`*`, `+`, `{}`) là các toán tử tham lam, vì vậy chúng mở rộng kết quả khớp đến mức dài nhất có thể thông qua văn bản được cung cấp.
 
-Ví dụ: `<.+>` Khớp với `<div>simple div</div>` trong "This is a <div>simple div</div> test". Để chỉ bắt được thẻ `div`, chúng ta có thể sử dụng dấu `?` để làm cho nó trở nên lười biếng hơn:
+Ví dụ: `<.+>` Khớp với `<div>simple div</div>` trong `"This is a <div>simple div</div> test"`. Để chỉ bắt được thẻ `div`, chúng ta có thể sử dụng dấu `?` để làm cho nó trở nên lười biếng hơn:
 
 | Ví dụ | Giải thích |
 | --- | --- |
