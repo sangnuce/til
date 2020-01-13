@@ -168,4 +168,6 @@ Truy vấn trên không hiệu quả vì nó sử dụng ký tự đại diện 
 SELECT * FROM Customers
 WHERE FirstName LIKE 'A%'
 ```
-Tất nhiên là trong những trường hợp bất khả kháng cần phải dùng wildcards ở đầu pattern thì ta nên xem xét đến việc có nên sử dụng một số công cụ hỗ trợ khác như Elastic Search không.
+Tất nhiên là trong những trường hợp bất khả kháng cần phải dùng wildcards ở đầu pattern thì ta nên xem xét đến việc có nên sử dụng một số công cụ hỗ trợ khác như Elastic Search hay không nhé.
+
+*Tham khảo: [https://www.geeksforgeeks.org/what-are-the-best-ways-to-write-a-sql-query/](https://www.geeksforgeeks.org/what-are-the-best-ways-to-write-a-sql-query/)*
