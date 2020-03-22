@@ -122,3 +122,4 @@ Nếu bạn clck vào `<p>`, thì chuỗi xử lý là:
 2. `P` (pha mục tiêu, kích hoạt hai lần vì chúng ta đặt hai lần lắng nghe sự kiện: bắt giữ và sủi bọt)
 3. `DIV` → `FORM` → `BODY` → `HTML` (giai đoạn sủi bọt, dòng lắng nghe sự kiện thứ hai)
 
+*Bài viết được tham khảo dịch từ https://javascript.info/bubbling-and-capturing*
