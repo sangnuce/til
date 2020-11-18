@@ -1,9 +1,9 @@
 # React router
 - Mô hình dynamic routing thay vì static routing: việc điều hướng sẽ diễn ra trong quá trình render
 - Các loại thành phần chính:
-+ routers: như <BrowserRouter> và <HashRouter>, là cốt lõi của mọi ứng dụng React Routers, thực hiện việc lưu trữ URL, phải khai báo ở top level
-+ route matchers: như <Route> và <Switch>, chỉ định component được render tương ứng với URL
-+ navigation: như <Link>, <NavLink> và <Redirect>, tạo link / điều hướng người dùng đến 1 route nào đó
+  + routers: như `<BrowserRouter>` và `<HashRouter>`, là cốt lõi của mọi ứng dụng React Routers, thực hiện việc lưu trữ URL, phải khai báo ở top level
+  + route matchers: như `<Route>` và `<Switch>`, chỉ định component được render tương ứng với URL
+  + navigation: như `<Link>`, `<NavLink>` và `<Redirect>`, tạo link / điều hướng người dùng đến 1 route nào đó
 
 # React hooks
 ## useState
