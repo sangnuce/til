@@ -76,9 +76,7 @@ import { Elements, CardElement } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import "./App.css";
 
-const stripePromise = loadStripe(
-  "pk_test_51Hc0ufKbavdG8hXdgDmoRJvyZIG7vQzAqmt7ZInzxFmMvfxz2GFwVrLwjgBxqS1qf5ejCrMGgm2ygJfB5Zx0HS7B00PmsPLgAK"
-);
+const stripePromise = loadStripe("pk_test_JJ1eMdKN0Hp4UFJ6kWXWO4ix00jtXzq5XG");
 
 const CARD_OPTIONS = {
   style: {
